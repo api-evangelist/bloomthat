@@ -1,7 +1,25 @@
 aid: bloomthat
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bloomthat.png
 name: BloomThat
-description: BloomThat is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: BloomThat was an a16z-backed, San Francisco same-day flower and gift delivery startup, surfaced
+  as a portfolio company and added to the API Evangelist network as an enrichment lead. It operated a
+  consumer (B2C) mobile and web ordering experience and never published a public developer API. As of this
+  enrichment pass its domain (bloomthat.com) 301-redirects to ftd.com/bloomthat, indicating the brand has
+  been acquired by / absorbed into FTD and no longer operates an independent developer surface.
+x-status: acquired
+x-acquired-by: FTD
+x-enrichment-note: 'No independent website, developer portal, API, or artifacts found; bloomthat.com 301-redirects to ftd.com/bloomthat.'
 url: https://raw.githubusercontent.com/api-evangelist/bloomthat/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,23 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Flower Delivery
+- Gifting
+- E-commerce
+- Same-Day Delivery
+- Consumer
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
